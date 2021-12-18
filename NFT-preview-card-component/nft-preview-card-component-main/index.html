@@ -1,33 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        body {
+            background-color: #23274d;
+        }
+        
+        .container {
+            color: #8a9fc3;
+            background-color: #15273f;
+            width: 23%;
+            height: 80%;
+            margin: auto;
+            border-radius: 7%;
+            padding: 2%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            font-size: 18px;
+        }
+        
+        .Picture {
+            margin-left: 5%;
+            width: 90%;
+            height: 60%;
+            border-radius: 3%;
+        }
+        
+        .container h1 {
+            color: white;
+        }
+        
+        .info {
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+        }
+        
+        .eter {
+            color: #41e5ed;
+        }
+        
+        hr {
+            background-color: #495e80;
+            border-color: #495e80;
+        }
+        
+        .bottom {
+            display: flex;
+            align-items: center;
+        }
+        
+        .avatar {
+            width: 10%;
+            border-color: white;
+            border-radius: 5px;
+            margin-left: 5%;
+        }
+        
+        .white {
+            color: white;
+        }
+        
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+            /*background-color: aquamarine;*/
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
 </head>
+
 <body>
 
-  Equilibrium #3429
+    <div class="container">
+        <img src="images/image-equilibrium.jpg" class="Picture">
 
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+        <h1>Equilibrium #3429</h1>
+        <p>Our Equilibrium collection promotes balance and calm.</p>
+        <div class="info">
+            <div class="eter"><img src="images/icon-ethereum.svg" alt=""> 0.041 ETH </div>
+            <div class="time"><img src="images/icon-clock.svg" alt=""> 3 days left</div>
+        </div>
+        <hr>
+        <div class="bottom">
+            <img src="images/image-avatar.png" alt="" class="avatar">
+            <div class="normal">&nbsp;&nbsp;&nbsp;Creation of&nbsp;&nbsp;</div>
+            <div class="white"> Jules Wyvern</div>
+        </div>
+        <br>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://www.instagram.com/tudor.mw/" target="_blank">Tudor Murariu</a>.
+        </div>
+    </div>
 </body>
+
 </html>
